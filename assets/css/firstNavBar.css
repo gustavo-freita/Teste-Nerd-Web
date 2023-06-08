@@ -8,34 +8,34 @@
     border-bottom: 5px solid #71D8FF;
 }
 
-.container__navBar {
+.first__navBar .container__navBar {
     display: flex;
     gap: 59px;
 }
 
-.navBar__logo img {
+.container__navBar .navBar__logo img {
     width: 110px;
     height: 21px;
 }
 
-.navBar__menu {
+.first__navBar .container__navBar ul {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.navBar__menu .navBar__item {
+.first__navBar .container__navBar ul li {
     list-style: none;
 }
 
-.navBar__menu .navBar__item .navBar__link {
+.first__navBar .container__navBar ul li a {
     font-size: 14px;
     color: #2C3A2F;
     text-decoration: none;
     transition: .2s ease;
 }
 
-.navBar__menu .navBar__item .navBar__link:hover {
+.first__navBar .container__navBar ul li a:hover {
     font-size: 16px;
     color: #00aeef;
 }
