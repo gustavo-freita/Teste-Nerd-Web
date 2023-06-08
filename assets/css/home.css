@@ -57,13 +57,12 @@
     color: #71D8FF;
 }
 
-.content__information hr {
-    width: 15px;
+.content__line {
+    background: url("../img/linha01.png");
+    width: 30px;
     height: 316px;
-    transform: matrix(0, 1, -1, 0, 0, 0);
-    border: 1.32px solid var(--unnamed-color-00aeef);   
-    border: 1px solid #00AEEF;
-    rotate: 90deg;
+    transform: scaleX(-1);
+    rotate: 180deg;
 }
 
 .arrow {
