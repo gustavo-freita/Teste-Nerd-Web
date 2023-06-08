@@ -1,0 +1,125 @@
+.home__banner {
+    height: 100vh;
+    background: url("../img/banner.png");
+    background-position: center center;
+}
+
+.home__content {
+    width: 100%;
+    margin-bottom: 150px;
+    border-top: 5px solid #71D8FF;
+}
+
+.home__content .content{
+    display: flex;
+    flex-direction: column;
+    width: 1320px;
+    height: 364px;
+}
+
+.content__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+.home__services {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 450px;
+}
+.content__information .home__services h1 {
+    width: 310px;
+    height: 43px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #033244;
+}
+
+.content__information .home__services h1 span {
+    color: #00AEEF;
+}
+
+.content__information .home__services button {
+    width: 181px;
+    height: 36px;
+    font-size: 14px;
+    color: #033244;
+    border: none;
+    background-color: #71D8FF;
+    transition: 0.5 ease;
+}
+
+.content__information .home__services button:hover {
+    background-color: #033244;
+    color: #71D8FF;
+}
+
+.content__information hr {
+    width: 15px;
+    height: 316px;
+    transform: matrix(0, 1, -1, 0, 0, 0);
+    border: 1.32px solid var(--unnamed-color-00aeef);   
+    border: 1px solid #00AEEF;
+    rotate: 90deg;
+}
+
+.arrow {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.arrow span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 20%;
+    background-color: #f4f4f4;
+}
+
+.arrow i {
+    color: #033244;
+}
+
+.home__servicesChoice {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.servicesChoices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 284px;
+    height: 316px;
+}
+
+.servicesChoices img {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 16px;
+}
+
+.servicesChoices h2 {
+    width: 223px;
+    height: 21px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #101912;
+    margin-bottom: 16px;
+}
+
+.servicesChoices p {
+    width: 223px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #101912;
+}
