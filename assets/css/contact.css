@@ -1,0 +1,104 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 115px;
+}
+
+.contact .container__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact .container__contact .line02 {
+    width: 100%;
+    margin-top: 80PX;
+    margin-bottom: 29px;
+}
+
+.container__contact .contact__position {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__contact .contact__position .contact__content {
+    width: 1320px;
+    height: 292px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-bottom: 80px;
+    margin-left: 200px;
+}
+
+.contact__position .contact__content .info__contact {
+    width: 536px;
+    height: 231px;
+}
+
+.contact__position .contact__content .info__contact h1 {
+    font-size: 16px;
+    color: #2C3A2F;
+    margin-bottom: 25px;
+}
+
+.contact__position .contact__content .info__contact p {
+    font-size: 15px;
+    color: #2C3A2F;
+}
+
+.contact__position .send__contact {
+    height: 262px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F3F3F3;
+}
+
+.contact__position .send__contact .news__contact {
+    width: 312px;
+    height: 159px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 112px;
+}
+
+.send__contact .news__contact h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #033244;
+}
+
+.send__contact .news__contact p {
+    font-size: 20px;
+    color: #0089BC;
+}
+
+.contact__position .register__contact {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 112px;
+}
+
+.contact__position .register__contact input {
+    width: 672px;
+    height: 44px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 2px solid #005271;
+    padding-inline-start: 25px;
+    color: #005271;
+    background-color: #F3F3F3;
+
+}
+
+.contact__position .register__contact button {
+    width: 165px;
+    height: 45px;
+    font-size: 14px;
+    color: #033244;
+    background-color: #71D8FF;
+    border: none;
+}
