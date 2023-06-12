@@ -1,321 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/firstNavBar.css">
-    <link rel="stylesheet" href="./assets/css/secondNavBar.css">
-    <link rel="stylesheet" href="./assets/css/sitesMore.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
-    <link rel="stylesheet" href="./assets/css/products.css">
-    <link rel="stylesheet" href="./assets/css/services.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <title>NerdWeb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+        integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/src/css/style.css">
+    <title>Teste Nerdweb</title>
 </head>
+
 <body>
-    <header>
-        <nav class="first__navBar">
-            <div class="container__navBar">
-                <div class="navBar__logo">
-                    <img src="./assets/img/logo.png" alt="logo da NerdWeb">
-                </div>
-                <ul class="navBar__menu">
-                    <li><a href="#">Nerdweb</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Atendimento</a></li>
-                </ul>
-            </div>
-            <div class="container__icons">
-                <div class="icons__search">
-                    <p>DIA A DIA</p>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-                <div class="icons">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-regular fa-circle-user"></i>
-                </div>
-            </div>
-            <div class="hamburguer">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-        <ul class="navBar__responsive">
-            <img src="./assets/img/Grupo 549.png" alt="logo nerdweb">
-            <div class="first__part">
-                <li><a href="#">Nerdweb</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Atendimento</a></li>
-            </div>
-            <hr>
-            <div class="second__part">
-                <li id="down"><a href="#">SITES</a><i class="fas fa-caret-down"></i></li>
-                <div class="popUp__mobile">
-                    <ul>
-                        <li>Soluções Sites</li>
-                        <li>Soluções por E-commerce</li>
-                        <li>Soluções por Redes Sociais</li>
-                        <li>Soluções  por Landing Page</li>
-                    </ul>
-                </div>
-                <li><a class="color" href="#">REDES SOCIAIS</a></li>
-                <li><a class="color" href="#">E-COMMERCE</a></li>
-                <li><a class="color" href="#">MÍDIA ONLINE</a></li>
-                <li><a class="color" href="#">LANDING PAGES</a></li>
-            </div>
+    <header class="border__secondary">
+        <img src="./assets/src/img/logo.png" alt="logo">
+        <ul class="display__mod">
+            <li><a href="#">Nerdweb</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Atendimento</a></li>
+        </ul>
+        <ul>
+            <li class="display__mod">
+                <button role='button'>
+                    <span>DIA A DIA
+                        <i class='fas fa-caret-down'></i>
+                    </span>
+                </button>
+            </li>
+            <li><a href="#"><i class='far fa-user-circle' style="color:#71D8FF; font-size:1.5rem"></i></a>
+            </li>
+            <li><a href="#"><i class='fa fa-shopping-cart'
+                        style="color:#71D8FF; font-size:1.5rem;"></i></a></li>
+            <li class="display__mobile" data-target="#mobile-modal"><a href="#"><i class='fas fa-bars'style="color:gray;font-size:1.5rem;"></i></a></li>
         </ul>
     </header>
-   <!--  <nav class="second__navBar">
+    <nav class="display__home">
         <ul>
-            <li id="site"><a href="#">SITES</a><i class="fa-solid fa-caret-down"></i></li>
-            <li><a href="#">REDES SOCIAIS</a></li>
-            <li><a href="#">E-COMMERCE</a></li>
-            <li><a href="#">MÍDIA ONLINE</a></li>
-            <li><a href="#">LANDING PAGES</a></li>
+            <li data-target="#nav-dropdown"><a href='#'>sites <i class="fas fa-caret-down"></a></i>
+            </li>
+            <li><a href="#">redes sociais</a></li>
+            <li><a href="#">e-commerce</a></li>
+            <li><a href='#'>mídia online</a></li>
+            <li><a href="#">landing pages</a></li>
         </ul>
-        <div class="search">
-            <input type="search" placeholder="Digite sua pessquisa">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        <form action="">
+            <input type="text" placeholder="Digite sua pesquisa"><button type="submit"><i class="fa fa-search" style="color:#E2F7FF"></i></button>
+        </form>
     </nav>
-    <div class="container__sitesMore">
-        <div class="sites__more">
-            <div class="list__site">
-                <h2>Soluções<br> Sites</h2>
-                <hr/>
-                <p><a href="#">Briefing</a></p>
-                <p><a href="#">Pesquisa</a></p>
-                <p><a href="#">Criação</a></p>
-                <p><a href="#">Veiculação</a></p>
-            </div>
-            <div class="list__ecommerce">
-                <h2>Soluções por<br> E-commerce</h2>
-                <hr/>
-                <p><a href="#">Lorem</a></p>
-                <p><a href="#">Ipsum</a></p>
-                <p><a href="#">Dolor</a></p>
-                <p><a href="#">Google ads</a></p>
-                <p><a href="#">Análise de mercado</a></p>
-            </div>
-            <div class="list__redes">
-                <h2>Soluções por<br> Redes Sociais</h2>
-                <hr/>
-                <p><a href="#">Briefing</a></p>
-                <p><a href="#">Pesquisa</a></p>
-                <p><a href="#">Criação</a></p>
-                <p><a href="#">Veiculação</a></p>
-            </div>
-            <div class="list__landingPage">
-                <h2>Soluções por<br> Landing Page</h2>
-                <hr/>
-                <p><a href="#">Conteúdo</a></p>
-                <p><a href="#">Relatórios</a></p>
-            </div>
-        </div>
-    </div>
-
+    <ul class="mapa__do__site display__home" id="nav-dropdown" data-state="false">
+        <li>
+            <ul>
+                <li>Soluções<br> Site</li>
+                <hr>
+                <br>
+                <li><a href="#">Briefing</a></li>
+                <li><a href="#">Pesquisa</a></li>
+                <li><a href="#">Criação</a></li>
+                <li><a href="#">Veiculação</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>Soluções por<br> E-commerce</li>
+                <hr>
+                <br>
+                <li><a href='#'>Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Google Ads</a></li>
+                <li><a href="#">Análise de mercado</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>Soluções por<br> Redes Sociais</li>
+                <hr>
+                <br>
+                <li><a href="#">Briefing</a></li>
+                <li><a href="#">Pesquisa</a></li>
+                <li><a href="#">Criação</a></li>
+                <li><a href="#">Veiculação</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>Soluções por<br> Landing Pages</li>
+                <hr>
+                <br>
+                <li><a href="#">Conteúdo</a></li>
+                <li><a href="#">Relatórios</a></li>
+            </ul>
+        </li>
+    </ul>
+    <img src="./assets/src/img/banner.png" class='banner' alt="banner">
     <main>
-        <section class="home">
-            <div class="home__banner"></div>
-            <div class="home__content">
-                <div class="content">
-                    <div class="content__information">
-                        <div class="home__services">
-                            <h1>Descubra os serviços Nerdweb <span>que mais combinam com a sua empresa</span></h1>
-                            <button>VER SERVIÇOS</button>
-                        </div>
-                        <div class="content__line"></div>
-                        <div class="content__services">
-                            <div class="arrow">
-                                <span><i class="fa-solid fa-chevron-left"></i></span>
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </div>
-                            <div class="home__servicesChoice">
-                                <div class="servicesChoices">
-                                    <img src="./assets/img/alt_route_black_24dp.png" alt="">
-                                    <h2>Título</h2>
-                                    <p>Dolor sit amet, consetetur sadipscing elitr,sed.</p>
-                                </div>
-                                <div class="servicesChoices">
-                                    <img src="./assets/img/headset_mic_black_24dp.png" alt="">
-                                    <h2>Serviços</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur sadipscing.</p>
-                                </div>
-                                <div class="servicesChoices">
-                                    <img src="./assets/img/inventory_black_24dp.png" alt="">
-                                    <h2>Exemplo</h2>
-                                    <p>Ipsum dolor sit amet, consectetur sadipscing elitr.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
+        <section id='services'>
+            <div>
+                <h1 class="title">Descubra os serviços Nerdweb <span style="color: #00aeef">que mais combinam com sua empresa</span>
+                </h1>
+                <br>
+                <button class='button'><span>VER SERVIÇOS</span></button>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper services-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide card-swiper">
+                        <img src="./assets/src/img/alt_route_black_24dp.svg">
+                        <h2>Título</h2>
+                        <br>
+                        <p>Dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                    </div>
+                    <div class="swiper-slide card-swiper">
+                        <img src="./assets/src/img/headset_mic_black_24dp.svg">
+                        <h2>Serviço</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consetetur.</p>
+                    </div>
+                    <div class="swiper-slide card-swiper">
+                        <img src="./assets/src/img/inventory_black_24dp.svg">
+                        <h2>Exemplo</h2>
+                        <br>
+                        <p>Ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section class="products">
-            <h1>Conheça todos <span> produtos Nerdweb</span></h1>
-            <div class="slide">
-                <div class="slide__content">
-                    <img src="./assets/img/LAPTOP.png" alt="">
-                    <p>SITES</p>
-                </div>
-                <div class="slide__content">
-                    <img src="./assets/img/PHONE.png" alt="">
-                    <p>E-COMMERCE</p>
-                </div>
-                <div class="slide__content">
-                    <img src="./assets/img/SHOP.png" alt="">
-                    <p>REDES</p>
-                </div>
-            </div>
-            <div class="button">
-                <button class="products__button">VER TODOS PRODUTOS</button>
-            </div>
-            <div class="register__banner">
-                <div class="register__content">
-                    <h2>Faça parte do nosso time de nerds</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam deserunt temporibus vitae doloribus numquam cupiditate quas non sit praesentium repellendus eius animi enim aliquid, pariatur facilis illum. Laudantium, quia.</p>
-                    <button>CADASTRE-SE</button>    
-                </div>
-            </div>
-        </section>
 
-        <section class="services">
-            <div class="conteiner__services">
-                <h1>Seleção de Serviços</h1>
-                <h2>Conheça nossa seleção especial</h2>
-                <div class="services__content">
-                    <div class="service__choice">
-                        <img src="./assets/img/Imagem card serviço01.png" alt="">
-                        <div class="choice__background">
-                            <div class="choice__info">
-                                <h3>Serviço de teste de front-end</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut alabore et dolore magna.</p>
-                                <p><a href="#">CONHECER</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service__choice">
-                        <img src="./assets/img/Imagem card serviço02.png" alt="">
-                        <div class="choice__background">
-                            <div class="choice__info">
-                                <h3>Serviço de teste de front-end</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut alabore et dolore magna.</p>
-                                <p><a href="#">CONHECER</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service__choice">
-                        <img src="./assets/img/Imagem card serviço03.png" alt="">
-                        <div class="choice__background">
-                            <div class="choice__info">
-                                <h3>Serviço de teste de front-end</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut alabore et dolore magna.</p>
-                                <p><a href="#">CONHECER</a></p>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-            <div class="services__banner">
-                <div class="servicesBanner__content">
-                    <h4>Coneça a visão Nerdweb e entenda nossa história</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-                    <button>IR PARA SOBRE</button>    
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
-
-        <section class="contact">
-            <div class="container__contact">
-                <img class="line02" src="./assets/img/linha02.png" alt="">
-                <div class="contact__position">
-                    <div class="contact__content">
-                        <div class="info__contact">
-                            <h1>Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore magna aliquyam</h1>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <strong>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</strong>, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur <strong>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</strong> voluptua. At vero eos et accusam et.</p>    
-                        </div>
-                        <div class="image__content">
-                            <img src="./assets/img/selo-wgc.png" alt="">
-                            <img src="./assets/img/principle-2.png" alt="">
-                            <img src="./assets/img/principle-3.png" alt="">
-                        </div>
+        <section id='produtos'>
+            <h1 class='title'>Conheça todos os <span style="color: #00aeef;">produtos Nerdweb</span></h1>
+            <div class="swiper produtos-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/src/img/PHONE-1.png">
+                        <h1>E-commerce</h1>
                     </div>
-                    <div class="send__contact">
-                        <div class="news__contact">
-                            <h2>Novidades e descontos especiais</h2>
-                            <p>Descubra com a gente uma vida nova, saudável, cheia de sabor e desconto!</p>
-                        </div>
-                        <div class="register__contact">
-                            <button>CADASTRAR</button>
-                            <input type="text" placeholder="Nome">
-                            <input type="email" placeholder="E-mail">
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/src/img/SHOP-1.png">
+                        <h1>Redes</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/src/img/LAPTOP.png">
+                        <h1>Sites</h1>
                     </div>
                 </div>
-               
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
+            <button class="button"><span>VER TODOS OS PRODUTOS</span></button>
+        </section>
+        <section id="recruit">
+            <div>
+                <h1 class="title">Faça parte do nosso time de nerds</h1>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatum necessitatibus dolorum beatae minus quisquam saepe rem architecto iste. Iure eveniet, dolore voluptate maxime dicta vero ea rem hic perferendis.</p>
+                <br>
+                <br>
+                <button class="button"><span>cadastre-se</span></button>
+            </div>
+        </section>
+        <section id='services-selection'>
+            <div style="text-align: center;">
+                <h1 class='title'>Seleção de Serviços</h1>
+                <h2 style='font-family:Roboto Slab;color:#00aeef;'>Conheça nossa seleção especial</h2>
+            </div>
+            <div class="services-selection-swiper" style='position:relative'>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/src/img/Imagem card serviço.png" alt="">
+                            <div class='blue-card'>
+                                <h1>Serviços de front-end</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatum necessitatibus dolorum beatae minus quisquam saepe rem architecto iste. Iure eveniet, dolore voluptate maxime dicta vero ea rem hic perferendis.</p>
+                                <a href="#">CONHECER</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/src/img/Imagem card serviço-1.png" alt="">
+                            <div class="blue-card">
+                                <h1>Serviços de front-end</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nobis ipsa, rerum excepturi, dolorum reprehenderit, quas earum repellat sapiente laboriosam quos molestias quae minus quisquam modi. Necessitatibus in ratione cupiditate!</p>
+                                <a href="#">CONHECER</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/src/img/Imagem card serviço-2.png" alt="">
+                            <div class="blue-card">
+                                <h1>Serviços de front-end</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatum necessitatibus dolorum beatae minus quisquam saepe rem architecto iste. Iure eveniet, dolore voluptate maxime dicta vero ea rem hic perferendis.</p>
+                                <a href="#">CONHECER</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <section id="know">
+            <div>
+                <h1 class="title">Coenhça a visão Nerdweb e entenda nossa história</h1>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatum necessitatibus dolorum beatae minus quisquam saepe rem architecto iste. Iure eveniet, dolore voluptate maxime dicta vero ea rem hic perferendis.</p>
+                <br>
+                <br>
+                <button class="button"><span>IR PARA SOBRE</span></button>
+            </div>
+        </section>
+        <section id="partners">
+            <div>
+                <p><strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</strong></p>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <strong>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</strong> no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur <strong>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</strong> voluptua. At vero eos et accusam et.</p>
+            </div>
+            <ul>
+                <li><img src="./assets/src/img/selo-wgc.png" alt=""></li>
+                <li><img src="./assets/src/img/principle-2.png" alt=""></li>
+                <li><img src="./assets/src/img/principle-3.png" alt=""></li>
+            </ul>
+        </section>
+        <section id="newsletter">
+            <div>
+                <h1 class="title">Novidades e descontos especiais</h1>
+                <br>
+                <p>Descubra com a gente uma vida noa, saudável, cheia de sabor e desconto!</p>
+            </div>
+            <form action="" name="newsletter">
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="text" name="nome" placeholder="E-mail">
+                <input type="submit" value="Cadastrar" class="button">
+            </form>
         </section>
     </main>
-
     <footer>
-        <div class="footer__information">
-            <img src="./assets/img/Grupo 549.png" alt="">
-            <div class="container__footerInformation">
-                <div class="information__nerdWeb">
-                    <h1>NERDWEB</h1>
-                    <p><a href="#">Sobre</a></p>
-                    <p><a href="#">Nossos Principios</a></p>
-                    <p><a href="#">Funcionários</a></p>
-                    <p><a href="#">Trabalhe Conosco</a></p>
-                </div>
-                <div class="information__help">
-                    <h1>AJUDA</h1>
-                    <p><a href="#">Prazos e Entregas</a></p>
-                    <p><a href="#">Troca e Devoluções</a></p>
-                    <p><a href="#">Políticas de Privacidade</a></p>
-                </div>
-                <div class="information__service">
-                    <h1>ATENDIMENTO</h1>
-                    <p><a href="#">Dúvidas Frequentes</a></p>
-                    <p><a href="#">(41) 3333-3333</a></p>
-                    <p><a href="#">teste@nerdweb.com.br</a></p>
-                </div>
-                <div class="information__time">
-                    <h1>HORÁRIO DE ATENDIMENTO</h1>
-                    <p>De segunda a sexta-feira das 08h00 às 12h00 e das 13h00 às 17h40</p>
-                </div>
-            </div>
+        <div>
+            <img src="./assets/src/img/Grupo 549.png" alt="">
+            <ul class="mapaDoSite">
+                <li>
+                    <ul>
+                        <li>Nerdweb</li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Nossos Princípios</a></li>
+                        <li><a href="#">Funcionários</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Ajuda</li>
+                        <li><a href='#'>Prazos e Entregas</a></li>
+                        <li><a href="#">Troca e Devoluções</a></li>
+                        <li><a href="#">Políticas de Privacidade</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Atendimento</li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                        <li><a href="#">(41) 3333-3333</a></li>
+                        <li><a href="#">teste@nerdweb.com.br</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Horário de Atendimento</li>
+                        <li>De segunda a sexta-feira</li>
+                        <li>De 8h00 às 12h00 e</li>
+                        <li>das 13h00 às 17h40</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <hr/>
-        <div class="footer__socialMedia">
-            <span class="footer__rights">2022 Nerdweb - Extreme Histing, todos os direitos reservados.</span>
-            <div class="socialMedia">
-                <span class="socialMedia__title">Fique em sintonia com a dente</span>
-                <div class="socialMedia__icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
+        <div>
+            <p>2022 Nerdweb - Extreme Hosting, todos os direitos reservados.</p>
+            <div>
+                <p>Fique em sintonia com a grande</p>
+                <br>
+                <ul class="social">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href='#'><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href='#'><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
- -->
-    <script src="./assets/js/popupFirst.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <ul class="display-mobile" id="mobile-modal" data-state="false">
+        <img src="./assets/src/img/Grupo 549.png" alt="">
+        <li><a href="#">Nerdweb</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href='#'>Atendimento</a></li>
+        <hr>
+        <li data-target="#dropdown-modal"><a href="#">Sites <i class="fas fa-caret-down"></i></a></li>
+        <ul id="dropdown-modal" data-state="false">
+            <li><a href="#">Soluções Site</a></li>
+            <li><a href="#">Soluções por E-commerce</a></li>
+            <li><a href="#">Soluções por Redes Sociais</a></li>
+            <li><a href="#">Soluções por Landing Page</a></li>
+        </ul>
+        <li><a href="#">Redes Sociais</a></li>
+        <li><a href="#">E-commerce</a></li>
+        <li><a href="#">Mídia Online</a></li>
+        <li><a href="#">Landing Pages</a></li>
+        <h1 data-target="#mobile-modal">x</h1>
+    </ul>
+    <script src="./assets/src/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
+
 </html>
