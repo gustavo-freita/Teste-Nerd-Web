@@ -1,0 +1,20 @@
+#know {
+    align-items: center;
+    background: url("../img/BG\ CONHEÇA.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 30px;
+}
+
+#know * {
+    color: white;
+    font-family: 'Roboto Slab';
+}
+
+#know p {
+    color: #71D8FF;
+}
+
+#know div {
+    width: 50%;
+}

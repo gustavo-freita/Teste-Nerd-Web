@@ -1,0 +1,29 @@
+#newsletter {
+    background: #F3F3F3;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#newsletter form {
+    width: 65%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+#newsletter p {
+    color: #71D8FF;
+}
+
+#newsletter form input:not([type=submit]) {
+    border: 1px solid #005271;
+    padding: 10px 0px;
+    background: transparent;
+}
+
+#newsletter form input::placeholder {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #005271;
+}

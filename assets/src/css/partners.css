@@ -1,0 +1,13 @@
+#partners * {
+    font-family: 'Roboto Slab';
+}
+
+#partners>* {
+    width: 50%;
+}
+
+#partners li img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 100%;
+}

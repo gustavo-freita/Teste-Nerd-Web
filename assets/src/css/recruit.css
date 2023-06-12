@@ -1,0 +1,29 @@
+#recruit {
+    position: relative;
+    background: url("../img/bg\ time.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+}
+
+#recruit div {
+    width: 50%;
+}
+
+#recruit p {
+    color: #3e7c93;
+}
+
+#services-selection {
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.services-selection-swiper {
+    width: 100%;
+}
+
+.services-selection-swiper .swiper-slide img {
+    width: 100%;
+    height: auto;
+}

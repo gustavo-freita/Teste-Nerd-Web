@@ -1,0 +1,25 @@
+.blue-card {
+    background-color: #283137;
+    padding: 20px;
+    position: relative;
+    bottom: 20px;
+}
+
+.blue-card * {
+    font-family: 'Roboto Slab';
+    margin-bottom: 20px;
+}
+
+.blue-card h1 {
+    color: white;
+}
+
+.blue-card p {
+    color: #bbb;
+    font-weight: 100;
+}
+
+.blue-card a {
+    color: #00AEEF;
+    font-weight: bold;
+}
