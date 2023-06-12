@@ -1,0 +1,80 @@
+#mobile-modal {
+    flex-direction: column;
+    background:#033244;
+    height: 100vh;
+    width: 100vw;
+    z-index:9999;
+    align-items: flex-start;
+    padding: 10px 10vw;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    color: #5eb7f2;
+}
+
+#mobile-modal[data-state=false] {
+    top:-200%;
+}
+
+#mobile-modal[data-state=true] {
+    top: 0px;
+}
+
+#mobile-modal hr {
+    width: 100%;
+    background: white;
+}
+
+#mobile-modal h1 {
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#mobile-modal li:nth-child(2), #mobile-modal li:nth-child(3), 
+#mobile-modal li:nth-child(4), #mobile-modal li:nth-child(5) {
+    color: white;
+}
+
+#dropdown-modal {
+    flex-direction: column;
+    align-items: flex-start;
+    background: black;
+    color: white;
+    transition: all .2s linear;
+    width:100%;
+}
+
+#dropdown-modal[data-state=false] {
+    height: 0px;
+    opacity: 0;
+}
+
+#dropdown-modal[data-state=true] {
+    opacity: 1;
+    height: fit-content;
+    padding: 20px;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    transform: rotate(45deg);
+    overflow: hidden;
+    margin-left: 5px;
+    margin-bottom: .3rem
+}
+
+.arrow-down div {
+    display: inline-block;
+    width: 200%;
+    height: 200%;
+    background-color: var(--primary-color);
+    transform: rotate(-45deg);
+    position: relative;
+    top: 50%;
+}

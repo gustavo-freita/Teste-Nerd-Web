@@ -1,0 +1,94 @@
+@media screen and (max-width:768px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .display__mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .display__mod {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .display__home {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    footer>div:first-child {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    footer .mapaDoSite {
+        flex-direction: column;
+    }
+
+    footer>div:last-child {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    body>*:nth-child(3) {
+        margin-top: var(--header-height);
+    }
+
+    #services-selection,
+    #partners {
+        text-align: left;
+    }
+
+    #partners>* {
+        width: 100%;
+    }
+
+    #partners ul {
+        justify-content: center;
+    }
+
+    #recruit div,
+    #know div {
+        width: 100%;
+    }
+
+    .services-selection-swiper .swiper-scrollbar-drag {
+        background: var(--secondary-color);
+    }
+
+    #newsletter form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #services {
+        flex-direction: column-reverse !important;
+    }
+}
